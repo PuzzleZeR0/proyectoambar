@@ -96,7 +96,7 @@ header {
     position: relative;
 }
 
-/* Líneas divisorias estandarizadas */
+/* Líneas divisorias */
 .seccion-con-divisor::after {
     content: "";
     display: block;
@@ -163,7 +163,7 @@ header {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Estilos comunes para texto */
+/* Estilos texto */
 .intro-texto h2, .seccion-texto h2 {
     color: #995400;
     margin-bottom: 1.5rem;
@@ -247,9 +247,6 @@ footer {
     transform: scale(1.1);
 }
 
-/* Añade esto al final de tu CSS, antes del media query */
-
-/* Estilo para la nueva sección (similar a la primera) */
 .nueva-seccion2 {
     max-width: 1200px;
     margin: 3rem auto;
@@ -257,26 +254,19 @@ footer {
     position: relative;
 }
 
-/* No necesitas añadir más estilos porque usamos las mismas clases */
-/* Las líneas divisorias ya están definidas en .seccion-con-divisor::after */
 
-/* Ajuste específico para la nueva sección si es necesario */
 .nueva-seccion2 .seccion-contenido {
     flex-direction: row; /* Imagen izquierda, texto derecha */
 }
 
 .nueva-seccion2 .seccion-imagen {
-    justify-content: flex-start; /* Alinea imagen a la izquierda */
+    justify-content: flex-start;
 }
 
-/* El resto de tus estilos existentes se mantienen igual */
-
-/* Estilo para la nueva sección (texto izquierda/imagen derecha) */
 .nueva-seccion3 {
     max-width: 1200px;
     margin: 3rem auto;
     padding: 0 2rem;
-    /* No lleva position: relative porque no tendrá línea divisoria */
 }
 
 .nueva-seccion3 .seccion-contenido {

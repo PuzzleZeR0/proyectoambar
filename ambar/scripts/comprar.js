@@ -108,7 +108,6 @@ function manejarCambiosInput(e) {
     }
 }
 
-// Añade estas variables al inicio con las otras selecciones de DOM
 const modalPago = document.getElementById('modal-pago');
 const btnAceptarPago = document.getElementById('aceptar-pago');
 
@@ -116,7 +115,7 @@ const btnAceptarPago = document.getElementById('aceptar-pago');
 document.getElementById('formulario-pago').addEventListener('submit', function(e) {
     e.preventDefault();
     
-    // Validación de fecha (tu código existente)
+    // Validación de fecha
     const mes = document.getElementById('mes-expiracion').value;
     const ano = document.getElementById('ano-expiracion').value;
     

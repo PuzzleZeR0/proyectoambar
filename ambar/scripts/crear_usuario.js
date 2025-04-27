@@ -24,6 +24,5 @@ document.getElementById('signupForm').addEventListener('submit', function(e) {
         return;
     }
     
-    // Aquí iría el código para procesar el registro
     alert('Cuenta creada exitosamente (simulación)');
 });

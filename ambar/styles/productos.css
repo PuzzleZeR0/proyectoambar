@@ -166,7 +166,7 @@ footer {
     transform: scale(1.1);
 }
 
-/* Contenedor de productos (base para luego) */
+/* Contenedor de productos*/
 .contenedor-productos {
     max-width: 1200px;
     margin: 2rem auto;
@@ -306,7 +306,7 @@ footer {
     transform: translateY(0);
 }
 
-/* Ocultar botón cuando no sea necesario */
+/* Ocultar botón */
 .boton-cargar.hidden {
     display: none;
 }
@@ -342,7 +342,7 @@ footer {
     transform: scale(1.1);
 }
 
-/* Estilos para controles de cantidad en productos */
+
 .producto-cantidad {
     display: flex;
     align-items: center;

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Todos los productos disponibles
+    // Todos los productos
     const todosProductos = [
         {
             id: 1,
@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Cargar productos iniciales
     mostrarProductos();
 
-    // Evento para el botón "Cargar más"
+    // Evento para el botón Cargar más
     botonCargarMas.addEventListener('click', function() {
         paginaActual++;
         mostrarProductos();
@@ -320,14 +320,14 @@ document.addEventListener('DOMContentLoaded', function() {
         actualizarContadorCarrito();
     }
 
-// Función para actualizar el contador
+// actualizar el contador
 function actualizarContadorCarrito() {
 const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 const totalItems = carrito.reduce((total, producto) => total + producto.cantidad, 0);
 document.querySelector('.contador').textContent = totalItems;
 }
 
-// Evento al hacer clic en "Agregar al carrito"
+// Evento Agregar al carrito
 document.addEventListener('click', function(e) {
     // Controles de cantidad
     if (e.target.classList.contains('aumentar')) {

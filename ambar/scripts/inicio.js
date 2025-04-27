@@ -6,7 +6,7 @@ function actualizarContadorCarrito() {
     
     if (contador) {
         contador.textContent = totalItems;
-        // Mostrar u ocultar el contador según haya items
+        // Mostrar u ocultar el contador
         contador.style.display = totalItems > 0 ? 'flex' : 'none';
     }
 }
@@ -14,7 +14,7 @@ function actualizarContadorCarrito() {
 // Actualizar al cargar la página
 document.addEventListener('DOMContentLoaded', actualizarContadorCarrito);
 
-// Escuchar cambios en el localStorage (por si se modifica desde otra pestaña)
+
 window.addEventListener('storage', function(e) {
     if (e.key === 'carrito') {
         actualizarContadorCarrito();
