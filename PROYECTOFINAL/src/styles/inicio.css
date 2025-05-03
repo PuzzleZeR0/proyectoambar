@@ -1,0 +1,343 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f8f4e9;
+}
+
+/* Header */
+header {
+    background-color: rgba(182, 145, 33, 0.88);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    backdrop-filter: blur(8px);
+    position: relative;
+    z-index: 100;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo h1 {
+    color: #663800;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Menú de navegación */
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 0.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 0.3rem;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #663800;
+}
+
+.menu a.active {
+    color: #663800;
+    border-bottom: 2px solid #663800;
+}
+
+/* Carrito de compras */
+.carrito a {
+    position: relative;
+    display: inline-block;
+}
+
+.carrito img {
+    width: 30px;
+    height: auto;
+}
+
+.carrito .contador {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #995400;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+/* Secciones con contenido */
+.introduccion, .nueva-seccion {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    position: relative;
+}
+
+/* Líneas divisorias */
+.seccion-con-divisor::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #663800;
+    margin-top: 3rem;
+    opacity: 0.7;
+}
+
+/* Primera sección (imagen izquierda/texto derecha) */
+.intro-contenido {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.intro-imagen {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.intro-imagen img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.intro-texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+/* Segunda sección */
+.seccion-contenido {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.seccion-texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.seccion-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.seccion-imagen img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Estilos texto */
+.intro-texto h2, .seccion-texto h2 {
+    color: #995400;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.intro-texto p, .seccion-texto p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0;
+    padding-right: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(182, 145, 33, 0.85);
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(153, 84, 0, 0.15);
+    color: #333;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-section a.footer-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+    display: inline-block;
+    padding: 0.2rem 0;
+}
+
+.footer-section a.footer-link:hover {
+    color: #663800;
+}
+
+.footer-section h3 {
+    color: #663800;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+/* Redes sociales */
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    padding-left: 0;
+}
+
+.social-icons img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s;
+    filter: drop-shadow(0 1px 1px rgba(0,0,0,0.1));
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.nueva-seccion2 {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    position: relative;
+}
+
+
+.nueva-seccion2 .seccion-contenido {
+    flex-direction: row; /* Imagen izquierda, texto derecha */
+}
+
+.nueva-seccion2 .seccion-imagen {
+    justify-content: flex-start;
+}
+
+.nueva-seccion3 {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.nueva-seccion3 .seccion-contenido {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nueva-seccion3 .seccion-texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.nueva-seccion3 .seccion-texto h2 {
+    color: #995400;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.nueva-seccion3 .seccion-texto p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0;
+    padding-right: 1rem;
+}
+
+.nueva-seccion3 .seccion-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nueva-seccion3 .seccion-imagen img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.carrito a.icono-carrito img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s;
+    filter: drop-shadow(0 1px 1px rgba(0,0,0,0.1));
+}
+
+.carrito a.icono-carrito:hover img {
+    transform: scale(1.1);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .intro-contenido, .seccion-contenido {
+        flex-direction: column;
+    }
+    
+    .intro-imagen, .intro-texto, 
+    .seccion-imagen, .seccion-texto {
+        width: 100%;
+    }
+    
+    .seccion-imagen {
+        justify-content: center;
+    }
+    
+    .intro-texto, .seccion-texto {
+        padding: 1.5rem 0;
+    }
+}
